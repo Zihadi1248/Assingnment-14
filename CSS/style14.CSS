@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+/* <!--Start Nav bar--> */
+
+
+header{
+    background-color: black;
+}
+
+.logo{
+    font-size: 30px;
+    color: white;
+    
+}
+
+.logo:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: all 2s ease-in-out;
+}
+
+.logo::first-letter{
+    font-size: 60px;
+}
+
+.menu{
+    align-items: center;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin: auto;
+}
+
+ul{
+    font-size: 20px;
+    display: flex;
+    color: white;
+    list-style: none;
+    column-gap: 80px;
+}
+
+li:hover{
+    text-decoration:underline;
+}
+
+nav{
+    display:flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.one{
+    display: none;
+    color:white;
+    font-size: 30px;;
+}
+
+input{
+    display: none;
+}
+
+/* <!--End Nav bar--> */
+
+/* <!-- Start hero section--> */
+
+.hero{
+    background-color: #F6F6F6;
+    height:900px;
+}
+
+.boxes{
+    width:80%;
+    height:800px;
+    background-color: white;
+    margin:auto;
+    display: flex;
+}
+
+.left{
+    position: relative;
+    top: 50px;
+    width:50%;
+}
+img{
+    filter: drop-shadow(10px 10px 10px rgb(151, 12, 12));
+ }
+
+img:hover{
+    transform: scale(1.8);
+}
+.great{
+    display: flex;
+    justify-content: space-around;
+}
+
+.less{
+    position:relative;
+    left:90px;
+    top:70px;
+}
+.right{
+    width:50%;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+}
+.name{
+    font-size: 20px;
+    line-height: 50px;
+}
+.bold{
+    font-weight: bold;
+}
+
+.about{
+    font-size:30px;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 5px;
+}
+
+.para{
+    font-size: 20px;
+}
+
+.html{
+position: relative;
+top: 50px;
+}
+
+progress{
+    height: 20px;
+    width:80%;
+    position: relative;
+    top: 50px;
+}
+
+/* <!-- End hero section--> */
+
+@media screen and (max-width:1200px){
+ul{
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    color: black;
+    background-image: url("../image/image1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding: 20px 25px;
+    line-height: 50px;
+}
+
+a{
+    color:black;
+}
+
+.one{
+    display: block;
+}
+
+.menu input:checked ~ nav ul{
+right:150px;
+transition: all 1s ease-in-out;
+
+}
+
+.boxes{
+    width:100%;
+    display: block;
+}
+
+.left{
+    width:100%;
+    display:block;
+}
+
+.right{
+    top:300px;
+    position: relative;
+    width:100%;
+    display:block;
+
+}
+
+.about{
+text-align: center;
+}
